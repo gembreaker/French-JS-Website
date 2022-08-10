@@ -1,0 +1,414 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Verdana;
+}
+
+.col-9 {
+	width: 75%;
+	margin-left: 12%;
+}
+
+nav {
+	height: 10vh;
+	background: #d30505;
+	display: flex;
+}
+
+header {
+	position: sticky;
+	top: 0;
+}
+
+.france-nav-links {
+	display: flex;
+	list-style: none;
+	width: 50%;
+	height: 100%;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: auto;
+}
+
+.france-nav-links li a{
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+@media screen and (max-width: 768px)
+{
+	.line{
+		width: 30px;
+		height: 3px;
+		background: white;
+		margin: 5px;
+	}
+	nav{
+		position: relative;
+	}
+
+	.hamburger{
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 50%;
+		transform: translate(-5%, -50%);
+		z-index: 2;
+	}
+
+	.france-nav-links {
+		background: #d30505;
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+		clip-path: circle(100px at 90% -10%);
+		-webkit-clip-path: circle(100px at 90% -10%);
+		transition: all 1s ease-out;
+		pointer-events: none;
+	}
+	.france-nav-links.open {
+		clip-path: circle(1000px at 90% -10%);
+		-webkit-clip-path: circle(1000px at 90% -10%);
+		pointer-events: all;
+	}
+	.france-nav-links{
+		flex-direction: column;
+	}
+	.france-nav-links li{
+		opacity: 0;
+	}
+	.france-nav-links li a {
+		font-size: 25px;
+	}
+	.france-nav-links li:nth-child(1) {
+		transition: all 0.5s ease 0.2s;
+	}
+	.france-nav-links li:nth-child(2) {
+		transition: all 0.5s ease 0.4s;
+	}
+	.france-nav-links li:nth-child(3) {
+		transition: all 0.5s ease 0.6s;
+	}
+	li.fade-nav{
+		opacity: 1;
+	}
+}
+
+.border{
+	border: 0.08px solid black;
+	padding: 10px;
+	background-color: #fbea81;
+}
+
+.days-border{
+	border: 0.08px solid black;
+	padding: 10px;
+}
+
+/*Quiz*/
+#quiz{
+	margin-left: 10px;
+	background: #9ed1dd;
+	padding: 10px 20px 10px 20px;
+	width: 400px;
+	float: left;
+}
+
+input{
+	margin-bottom: 20px;
+}
+
+#textbox{
+	height: 25px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	padding-left: 5px;
+}
+
+#button{
+	background: red;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	transition-duration: 25s;
+	margin-top: 15px;
+}
+
+#button:hover{
+	background:white;
+	border: 1px solid green;
+	color: black;
+	cursor: pointer;
+}
+
+#after_submit{
+	visibility: hidden;
+	width: 500px;
+	float: right;
+	margin-left: 20px;
+	font-size: 30px;
+}
+
+.countdownContainer{
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translateX(-50%) translateY(-50%);
+	text-align: center;
+	background: #ddd;
+	border: 1px solid #999;
+	padding: 10px;
+	box-shadow: 0 0 5px 3px #ccc;
+}
+
+.info{
+	font-size: 80px;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+.fadeInAnimated {
+	opacity: 0;
+	animation: fadeIn 2s forwards;  /*forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends*/ 
+}
+
+#second {
+	animation-delay: 1s;
+}
+
+#third {
+	animation-delay: 2s;
+}
+
+#welcome-message{
+	text-align: center;
+}
+
+.jumbotron-france {
+	background: url('../Images/Banner.jpg') no-repeat #000;
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+	margin-bottom: 20px;
+}
+
+@media (min-width: 200px) {
+	.jumbotron-france {
+		min-height: 300px;
+	}
+}
+
+@media (min-width: 768px) {
+	.jumbotron-france {
+		min-height: 400px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.jumbotron-france {
+		min-height: 700px;
+		background-image: url('../Images/Banner.jpg');
+		background-position: center bottom;
+	}
+}
+
+.jumbotron-france-national-holidays {
+	background: url('../Images/south_france.jpg') no-repeat #000;
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+	margin-bottom: 20px;
+}
+
+@media (min-width: 200px) {
+	.jumbotron-france-national-holidays {
+		min-height: 300px;
+	}
+}
+
+@media (min-width: 768px) {
+	.jumbotron-france-national-holidays {
+		min-height: 400px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.jumbotron-france-national-holidays {
+		min-height: 700px;
+		background-image: url('../Images/south_france.jpg');
+		background-position: center bottom;
+	}
+}
+
+.jumbotron-france-quiz {
+	background: url('../Images/French-quizz.png') no-repeat #000;
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+	margin-bottom: 20px;
+}
+
+@media (min-width: 200px) {
+	.jumbotron-france-quiz {
+		min-height: 300px;
+	}
+}
+
+@media (min-width: 768px) {
+	.jumbotron-france-quiz {
+		min-height: 400px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.jumbotron-france-quiz {
+		min-height: 700px;
+		background-image: url('../Images/French-quizz.png');
+		background-position: center bottom;
+	}
+}
+
+/* Slideshow container */
+.slideshow-france-container {
+	max-width: 1000px;
+	width: 500px;
+	height: 300px;
+	position: relative;
+	margin: auto;
+}
+
+/* Hide the images by default */
+.myFranceSlides {
+	display: none;
+}
+
+/* nextSlide & previousSlideious buttons */
+.previousSlide, .nextSlide {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "nextSlide button" to the right */
+.nextSlide {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.previousSlide:hover, .nextSlide:hover {
+		background-color: rgba(0,0,0,0.8);
+	}
+
+/* Caption text */
+.caption-text-slideshow {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+	.active, .dot:hover {
+		background-color: #717171;
+	}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+.type-writing{
+	position: relative;
+	top: 10px;
+	font-size: 28px;
+}
+
+.type-writing::after {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	border-right: 2px solid black;
+	animation: blink 1s infinite ease;
+}
+
+@keyframes blink{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}

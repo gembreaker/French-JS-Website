@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="CSS/StyleSheet.css" />
+	<title>French National Holidays</title>
+</head>
+<body onload="javascript:countdown()">
+	<nav>
+		<div class="hamburger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<ul class="france-nav-links">
+			<li><a href="Index.html">French Facts</a></li>
+			<li><a href="Attractions.html">French National Holidays</a></li>
+			<li><a href="Quiz.html">French Quiz</a></li>
+		</ul>
+	</nav>
+	<section class="jumbotron-france-national-holidays"></section>
+	<div class="container col-9">
+		<h1 onClick="javascript:changetitlestyle(this)" style="text-align: center;">French national holidays</h1><br />
+		<div class="days-border">
+			<b>1 January:</b> New Year’s Day (Jour de l’an)<br />
+			<b>19 April:</b> Good Friday – Alsace and Moselle/Lorraine<br />
+			<b>22 April:</b> Easter Monday (Lundi de Pâques)<br />
+			<b>1 May:</b> Labour Day (Fête du premier mai)<br />
+			<b>8 May:</b> World War II Victory Day (Fête du huitième mai or Jour de la Victoire 45)<br />
+			<b>30 May:</b> Ascension Day (Jour de l’Ascension, 40 days after Easter)<br />
+			<b>10 June:</b> Whit Monday – also known as Pentecost Monday (Lundi de Pentecôte)<br />
+			<b>14 July:</b> Bastille Day (Fête nationale)<br />
+			<b>15 August:</b> Assumption of the Blessed Virgin Mary (Assomption)<br />
+			<b>1 November:</b> All Saints’ Day (La Toussaint)<br />
+			<b>11 November:</b> Armistice Day (Jour d’armistice)<br />
+			<b>25 December:</b> Christmas Day (Noël)<br />
+			<b>26 December:</b> Boxing Day/St Stephen’s Day (Deuxième jour de Noël) – Alsace and Moselle/Lorraine
+		</div><br />
+		<!-- Slideshow container -->
+		<div class="slideshow-france-container">
+
+			<!-- Full-width images with number and caption text -->
+			<div class="myFranceSlides fade">
+				<div class="numbertext">1 / 3</div>
+				<img src="Images/Bastille-Day-Banner.jpg" style="height: 300px; width: 500px">
+				<div class="caption-text-slideshow">Bastille Day</div>
+			</div>
+
+			<div class="myFranceSlides fade">
+				<div class="numbertext">2 / 3</div>
+				<img src="Images/bastille-day-paris.jpg" style="height: 300px; width: 500px">
+				<div class="caption-text-slideshow">Bastille Day</div>
+			</div>
+
+			<div class="myFranceSlides fade">
+				<div class="numbertext">3 / 3</div>
+				<img src="Images/BastilleDayMarch.jpg" style="height: 300px; width: 500px">
+				<div class="caption-text-slideshow">Bastille Day</div>
+			</div>
+
+			<!-- nextSlide and previousSlideious buttons -->
+			<a class="previousSlide" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="nextSlide" onclick="plusSlides(1)">&#10095;</a>
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+		</div>
+		<br /><br />
+		<div style="text-align: center;">
+			<h2 onClick="javascript:changetitlestyle(this)">Bastille Day</h2>
+
+			Celebrated on July, 14, Bastille Day is the French national day and the most important bank holiday in France! Setting the storming of the Bastille in 1789 as an essential part of the French History. The 14th July has become a major public holiday, traditionally considered as the symbol of the French Revolution.<br /><br />
+			The French Bastille Day is definitely a joyous national day that causes popular celebrations in the streets as well as political events. The best way to experience the 14 July bank holiday - widely known as Le 14 Juillet - is to go to Paris, more precisely on the Champs Elysees. Expect military parades, public speeches and fireworks, but also convivial gatherings in all cafés and restaurants!<br />
+			Every single town in France actually commemorates the Bastille Day with excitement and pride as this national day represents the first step to the French Revolution which eventually led France to Republic. On July, 14, patriotic feelings break out throughout the country, French people wear blue, white and red, "tricolore" clothes or make-up and sing the typical Marseillaise (the French anthem) after one - or more! - glasses of Champagne!<br /><br />
+			<h3>Countdown to Bastille Day 2020:</h3>
+			<p id="bastille-day"></p>
+		</div>
+	</div>
+		<br /><br />
+		<script src="JavaScript/JavaScript2.js"></script>
+</body>
+	</html>

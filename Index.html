@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="CSS/StyleSheet.css" />
+    <title>French Facts</title>
+</head>
+<body>
+	<nav>
+		<div class="hamburger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<ul class="france-nav-links">
+			<li><a href="Index.html">French Facts</a></li>
+			<li><a href="Attractions.html">French National Holidays</a></li>
+			<li><a href="Quiz.html">French Quiz</a></li>
+		</ul>
+	</nav>
+	<section class="jumbotron-france">
+		<h1 class="type-writing">Paris</h1>
+	</section>
+	<div class="container col-9">
+		<h1 style="text-align: center;" onClick="javascript:changetitlestyle(this)">Facts about France</h1>
+		<img src="Images/Eiffel-Tower.jpg" onMouseOut="javascript:changeimage(this,img1)" onMouseOver="javascript:changeimage(this,img2)" style="height:300px; width:350px; float: right;"><br />
+	<div id="mytext">
+	   	<b>Population:</b> 67.2 million people live in the country (2018)<br />
+	 	<b>Capital:</b> Paris, with 2.2 million inhabitants<br />
+	 	<b>Name:</b> République Française (French Republic)<br />
+	  	<b>Motto:</b> 'Liberté, Egalité, Fraternité' (Liberty, Equality, Fraternity)<br />
+	   	<b>Government:</b> Parliamentary Democracy<br />
+	   	<b>Language:</b> French<br />
+	 	<b>Religion:</b> Mainly Christian (64% Roman Catholic)<br />
+		<b>Currency:</b> 1 Euro=100cents, until 2002 French Franc<br />
+		<b>Flag:</b> Blue, white and red. The French refer to the flag as 'Tricolore' (French for 'three colours')<br />
+	 	<b>Anthem:</b> The French national anthem is also called 'La Marseillaise'<br />
+		<b>History:</b><div id="moretext">...</div><a href="javascript:findoutmore()"> Find out history </a><br />
+	  	<br /><br />
+	</div>
+		<p class="border">
+			You've probably noticed the styling of this page is pretty boring *yawn*. Which is why I have left it up to you to style the webpage just how you'd like! <br />
+			Press the buttons below to customise the page.<br />
+			Change the text colour:<br />
+			<input type="button" onClick="javascript:changecolor('red')" value="Red Text">
+			<input type="button" onClick="javascript:changecolor('blue')" value="Blue Text">
+			<input type="button" onClick="javascript:changecolor('black')" value="Black Text"><br />
+			Change the font style:<br />
+			<input type="button" onClick="javascript:changestyle('Calibri')" value="Calibri">
+			<input type="button" onClick="javascript:changestyle('Times New Roman')" value="Times New Roman">
+			<input type="button" onClick="javascript:changestyle('Arial')" value="Arial"><br />
+			Click the title of this page for a fancy title. 
+		</p>
+	</div><br /><br />
+	<script src="JavaScript/JavaScript.js"></script>
+</body>
+</html>
